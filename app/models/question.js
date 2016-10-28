@@ -8,5 +8,4 @@ export default DS.Model.extend({
   icon: DS.attr(),
   notes: DS.attr(),
   solved: DS.attr(),
-  answers: DS.hasMany('answer', {async: true})
 });
