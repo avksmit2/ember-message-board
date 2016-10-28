@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#main-nav-bar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- {{#link-to 'index' class="navbar-brand"}}Map-touch{{/link-to}} -->
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-nav-bar">
+      <ul class="nav navbar-nav">
+        <!-- {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}Home{{/nav-link-to}}
+        {{#nav-link-to 'contact' data-toggle='collapse' data-target='#main-nav-bar'}}Contact Us{{/nav-link-to}}
+        {{#nav-link-to 'about' data-toggle='collapse' data-target='#main-nav-bar'}}About Us{{/nav-link-to}} -->
+
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<header class="text-center jumbotron">
+  <h1>Enter Questions, Get Answers or Give Answers!</h1>
+</header>
+<div class="container">
+{{outlet}}
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <footer>
+      <!-- | {{#link-to 'contact'}}Contact us!{{/link-to}} |
+      {{#link-to 'about'}}About us!{{/link-to}} |
+      {{#link-to 'index'}}Home{{/link-to}} | -->
+
+    </footer>
+  </div>
+</nav>
