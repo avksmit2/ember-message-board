@@ -4,4 +4,11 @@
 <p>Notes: {{question.notes}}</p>
 <p>Question solved?{{question.solved}}</p>
 
-<button {{action 'delete' question}} class="btn btn-danger">Delete question</button>
+<div class="row">
+  <div class="col-sm-2">
+    <button {{action 'deleteQuestion' question}} class="btn btn-danger">Delete question</button>
+  </div>
+  <div class="col-sm-2">
+    {{update-question question=question udpateQuestion="updateQuestion"}}
+  </div>
+</div>
