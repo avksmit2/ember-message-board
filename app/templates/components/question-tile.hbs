@@ -1,7 +1,11 @@
-<div class="container question">
-  <div class="row">
-    <h6 class="question-author"><img src="{{question.icon}}">{{question.author}} on {{question.timestamp}}</h6>
-    <p>{{question.title}}</p>
-    <p>{{question.solved}}</p>
+{{#link-to 'question' question.id}}
+
+  <div class="container question">
+    <div class="row">
+      <h6 class="question-author"><img src="{{question.icon}}">{{question.author}} on {{question.timestamp}}</h6>
+      <p>{{question.title}}</p>
+      <p>Question solved?{{question.solved}}</p>
+    </div>
   </div>
-</div>
+
+{{/link-to}}
