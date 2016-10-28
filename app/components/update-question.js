@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   isShowingModal: false,
   actions: {
     updateQuestion(question) {
+      debugger;
       var params = {
         title: this.get('title') ? this.get('title') : "",
         author: this.get('author') ? this.get('author') : "",
@@ -14,6 +15,8 @@ export default Ember.Component.extend({
         notes: this.get('notes') ? this.get('notes') : "",
         solved: this.get('solved') ? this.get('solved') : "no"
       };
+      console.log("udpate" + params);
+
       this.set('isShowingModal', false);
       this.sendAction('updateQuestion', question, params);
     },

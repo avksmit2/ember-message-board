@@ -1,7 +1,7 @@
 {{#link-to 'question' questions.id}}
   <div class="container question">
     <div class="row">
-      <h6 class="question-author">{{questions.author}} on {{questions.timestamp}}</h6>
+      <h6 class="question-author">{{questions.author}} on {{moment-from-now questions.timestamp}}</h6>
       <p>{{questions.title}}</p>
       <p>Question solved?  {{questions.solved}}</p>
     </div>
