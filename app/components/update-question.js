@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   isShowingModal: false,
   actions: {
     updateQuestion(question) {
-      debugger;
       var params = {
         title: this.get('title') ? this.get('title') : "",
         author: this.get('author') ? this.get('author') : "",
