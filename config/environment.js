@@ -14,6 +14,12 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
+      },
+      firebase: {
+        apiKey: "AIzaSyAsLNvi5ShbsGf466W_wu0ZhfAhd7uyPro",
+        authDomain: "message-board-e5b6f.firebaseapp.com",
+        databaseURL: "https://message-board-e5b6f.firebaseio.com",
+        storageBucket: "message-board-e5b6f.appspot.com"
       }
     },
 
