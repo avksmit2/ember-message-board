@@ -6,16 +6,13 @@ export default Ember.Component.extend({
   actions: {
     updateQuestion(question) {
       var params = {
-        title: this.get('title') ? this.get('title') : "",
-        author: this.get('author') ? this.get('author') : "",
-        content: this.get('content') ? this.get('content') : "",
-        icon: this.get('icon') ? this.get('icon') : "https://dummyimage.com/600x400/000/fff.png&text=??",
+        title: this.get('title'),
+        author: this.get('author'),
+        content: this.get('content'),
+        icon: this.get('icon'),
         timestamp: moment().valueOf(),
-        notes: this.get('notes') ? this.get('notes') : "",
-        solved: this.get('solved') ? this.get('solved') : "no"
+        notes: this.get('notes'),
       };
-      console.log("udpate" + params);
-
       this.set('isShowingModal', false);
       this.sendAction('updateQuestion', question, params);
     },

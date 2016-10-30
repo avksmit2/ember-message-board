@@ -7,6 +7,5 @@ export default DS.Model.extend({
   timestamp: DS.attr(),
   icon: DS.attr(),
   notes: DS.attr(),
-  solved: DS.attr('boolean', {defaultValue: false}),
   answers: DS.hasMany('answer', {async: true})
 });

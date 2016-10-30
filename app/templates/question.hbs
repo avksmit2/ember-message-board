@@ -1,11 +1,15 @@
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
-
+{{question-detail question=model updateQuestion="updateQuestion" destroyQuestion="destroyQuestion"}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
 
 <h2>Answers:</h2>
-<ul>
+
+{{#if model.answers}}
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
-</ul>
+{{else}}
+  <p>
+    <em>There are no answers yet. Click "Add Answer" to add yours!</em>
+  </p>
+{{/if}}
