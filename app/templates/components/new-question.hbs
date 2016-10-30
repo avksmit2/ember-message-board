@@ -6,7 +6,12 @@
                   translucentOverlay=true}}
     <h1>New Question</h1>
     <div class="container">
-      <form {{action 'saveQuestion' on='submit'}}>
+      {{#each model.errors.messages as |message|}}
+        <div class="error">
+          {{message}}
+        </div>
+      {{/each}}
+      <form>
         <div class="form-group">
           <label for="title">Title:</label>
           {{input value=title id="title" class="form-control" required='required'}}
@@ -20,10 +25,14 @@
           {{input value=content id="content" class="form-control" required='required'}}
         </div>
         <div class="form-group">
+          <label for="notes">Notes:</label>
+          {{input value=notes id="notes" class="form-control"}}
+        </div>
+        <div class="form-group">
           <label for="icon">Your Icon:</label>
           {{input value=icon id="icon" class="form-control"}}
         </div>
-        <button class="btn btn-success">Save</button>
+        <button  {{action 'saveQuestion' on='submit'}} class="btn btn-success">Save</button>
       </form>
     </div>
   {{/modal-dialog}}

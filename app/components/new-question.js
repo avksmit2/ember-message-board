@@ -10,6 +10,7 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author') : "",
         content: this.get('content') ? this.get('content') : "",
         icon: this.get('icon') ? this.get('icon') : "https://dummyimage.com/600x400/000/fff.png&text=??",
+        notes: this.get('notes') ? this.get('notes') : "",
         timestamp: moment().valueOf()
       };
       this.set('isShowingModal', false);
