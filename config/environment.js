@@ -23,7 +23,7 @@ module.exports = function(environment) {
       databaseURL: "https://message-board-e5b6f.firebaseio.com",
       storageBucket: "message-board-e5b6f.appspot.com"
     },
-    
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
