@@ -6,32 +6,28 @@
                   translucentOverlay=true}}
     <h1>Update Question</h1>
     <div class="container">
-      <form {{action 'updateQuestion' question}} >
+      <form>
         <div class="form-group">
           <label for="title">Title:</label>
-          {{input value=title id="title" class="form-control" placeholder=question.title required='required'}}
+          {{input value=title id="title" class="form-control" placeholder=question.title}}
         </div>
         <div class="form-group">
           <label for="author">Author:</label>
-          {{input value=author id="author" class="form-control" placeholder=question.author  required='required'}}
+          {{input value=author id="author" class="form-control" placeholder=question.author}}
         </div>
         <div class="form-group">
           <label for="content">Content:</label>
-          {{input value=content id="content" class="form-control" placeholder=question.content required='required'}}
+          {{input value=content id="content" class="form-control" placeholder=question.content}}
         </div>
         <div class="form-group">
           <label for="notes">Notes:</label>
-          {{input value=notes id="notes" class="form-control" placeholder=question.notes required='required'}}
-        </div>
-        <div class="form-group">
-          <label for="solved">Solved:</label>
-          {{input value=solved id="solved" class="form-control" placeholder=question.solved required='required'}}
+          {{input value=notes id="notes" class="form-control" placeholder=question.notes}}
         </div>
         <div class="form-group">
           <label for="icon">Your Icon:</label>
-          {{input value=icon id="icon" class="form-control" placeholder=question.icon required='required'}}
+          {{input value=icon id="icon" class="form-control" placeholder=question.icon}}
         </div>
-        <button class="btn btn-success">Save</button>
+        <button  {{action 'updateQuestion' question}} class="btn btn-success">Save</button>
       </form>
     </div>
   {{/modal-dialog}}
