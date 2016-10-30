@@ -1,12 +1,11 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
-{{update-question question=model updateQuestion="updateQuestion"}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
 
 <h2>Answers:</h2>
 <ul>
-  {{#each model as |answer|}}
-    {{answer-tile answers=answer destroyAnswer="destroyAnswer"}}
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>

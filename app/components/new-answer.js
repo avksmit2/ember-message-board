@@ -8,7 +8,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author') ? this.get('author') : "",
         content: this.get('content') ? this.get('content') : "",
-        timestamp: moment().valueOf()
+        timestamp: moment().valueOf(),
+        question: this.get('question')
       };
       this.set('isShowingModal', false);
       this.sendAction('saveAnswer', params);

@@ -1,4 +1,6 @@
-<h5 class="answer-author">{{answer.author}} {{moment-from-now answer.timestamp}}</h5>
-<p>{{answer.content}}</p>
+<div class="answer-detail">
+  <h5 class="author">{{answer.author}} {{moment-from-now answer.timestamp}}</h5>
+  <p>{{answer.content}}</p>
 
-<button {{action 'destroyAnswer' answer}} class="btn btn-danger">Delete answer</button>
+  <button {{action 'destroyAnswer' answer}} class="btn btn-danger">Delete answer</button>
+</div>

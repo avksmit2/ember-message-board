@@ -1,10 +1,14 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
 
-.question {
+.question, .question-detail, .answer-detail {
   border: solid gray;
   margin: 10px;
-  padding-left: 30px;
+  padding: 30px;
+}
+
+.author {
+  font-style: italic;
 }
 
 .author-icon {

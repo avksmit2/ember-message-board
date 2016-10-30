@@ -1,8 +1,19 @@
-<h3>{{question.title}}</h3>
-<img src="{{question.icon}}" class="author-icon">
-<h5 class="question-author">{{question.author}} {{moment-from-now question.timestamp}}</h5>
-<p>{{question.content}}</p>
-<p>Notes: {{question.notes}}</p>
-<p>Question solved? {{question.solved}}</p>
+<div class="question-detail">
+  <h3>{{question.title}}</h3>
+  <h5 class="author">{{question.author}} {{moment-from-now question.timestamp}}</h5>
+  <img src="{{question.icon}}" class="author-icon">
+  <div class="well">
+    <p>{{question.content}}</p>
+    <p>Notes: {{question.notes}}</p>
+    <p>Question solved? {{question.solved}}</p>
+  </div>
 
-<button {{action 'destroyQuestion' question}} class="btn btn-danger">Delete question</button>
+  <div class="row">
+    <div class="col-sm-3">
+      <button {{action 'destroyQuestion' question}} class="btn btn-danger">Delete question</button>
+    </div>
+    <div class="col-sm-3">
+      {{update-question question=model updateQuestion="updateQuestion"}}
+    </div>
+  </div>
+</div>
