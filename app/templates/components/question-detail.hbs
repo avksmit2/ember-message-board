@@ -3,6 +3,6 @@
 <h5 class="question-author">{{question.author}} {{moment-from-now question.timestamp}}</h5>
 <p>{{question.content}}</p>
 <p>Notes: {{question.notes}}</p>
-<p>Question solved?{{question.solved}}</p>
+<p>Question solved? {{question.solved}}</p>
 
 <button {{action 'destroyQuestion' question}} class="btn btn-danger">Delete question</button>
