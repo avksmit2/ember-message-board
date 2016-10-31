@@ -11,7 +11,7 @@
           {{message}}
         </div>
       {{/each}}
-      <form>
+      <form   {{action 'saveQuestion' on='submit'}}>
         <div class="form-group">
           <label for="title">Title:</label>
           {{input value=title id="title" class="form-control" required='required'}}
@@ -32,7 +32,7 @@
           <label for="icon">Your Icon:</label>
           {{input value=icon id="icon" class="form-control"}}
         </div>
-        <button  {{action 'saveQuestion' on='submit'}} class="btn btn-success">Save</button>
+        <button class="btn btn-success">Save</button>
       </form>
     </div>
   {{/modal-dialog}}
