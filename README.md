@@ -1,7 +1,22 @@
 # Message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+###_This is a question / answer message board._ {October 28, 2016}
+
+### By _**Angela Smith**_
+
+## Description
+
+_This site allows the user to enter a question and anyone can enter the answer for it. The question can be added, updated and deleted; the answer can be added or deleted._
+
+## Specifications
+
+| Behavior          | Input    | Output |
+| ----------------- | -------- | ------ |
+| User can enter a question and see it in the list of questions | Is the sky blue? | Is the sky blue? What is Godzilla? |
+| User can update a question | Is the sky blue? | Why is the sky blue? |
+| User can delete a question | Is the sky blue? | "" |
+| Return the answers for specific questions | Is the sky blue?    | yes |
+| User can delete an answer for a specifi question | Is the sky blue? | "" |
 
 ## Prerequisites
 
@@ -25,29 +40,16 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Technologies used
 
-Make use of the many generators for code, try `ember help generate` for more details
+_SASS,
+Bootstrap,
+Bower,
+Firebase,
+Ember
 
-### Running Tests
+### License
 
-* `ember test`
-* `ember test --server`
+*This webpage is licensed under the MIT license.*
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 _**Angela Smith**_

@@ -13,6 +13,8 @@ export default Ember.Component.extend({
       };
       this.set('isShowingModal', false);
       this.sendAction('saveAnswer', params);
+      this.set('author', "");
+      this.set('content', "");
     },
     toggleModal: function() {
       this.toggleProperty('isShowingModal');

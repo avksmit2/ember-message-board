@@ -15,6 +15,11 @@ export default Ember.Component.extend({
       };
       this.set('isShowingModal', false);
       this.sendAction('saveQuestion', params);
+      this.set('title', "");
+      this.set('author', "");
+      this.set('content', "");
+      this.set('icon', "");
+      this.set('notes', "");
     },
     toggleModal: function() {
       this.toggleProperty('isShowingModal');
